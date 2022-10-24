@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 4 PemrogramanWeb Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container bg-info mt-2">
+      <h1 class="text-center text-white">CRUD DATA MAHASISWA <br class="justifay-content-center"> BOOTSTRAP & JQUERY</h1>
+    </div>
+    
+    <form action="" id="input" autocomplete="off" class="bg-secondary w-100 h-auto">
+      <div class="nim MB-3">
+        <label for="exampleInputEmail1" class="form-label text-white mb2">NIM </label>
+        <input class="form-control bg-dark text-white" type="text" name="nim" id="nim" placeholder="Masukkan Nim Anda"/>
+      </div>
+      <div class="nama mb-3">
+        <label for="exampleInputEmail1" class="form-label text-white">NAMA </label>
+        <input class="form-control bg-dark text-white" type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda"/>
+      </div>
+      <div class="button mb-2 justify-content-end">
+        <input type="submit" value="SIMPAN" class="bg-info text-white border-info mb-2" />
+      </div>
+    </form>
+
+    <table class="input-form d-flex justify-content-left rounded-start">
+      <tr>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <table class="list table table-dark table-striped" id="datalist" >
+          <thead>
+            <th>NO</th>
+            <th>NIM</th>
+            <th>NAMA</th>
+            <th>ACTION</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
